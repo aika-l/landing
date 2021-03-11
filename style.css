@@ -1,0 +1,268 @@
+/* mobile-version */
+body{
+    margin: 0;
+    padding:0;
+    font-family: 'Lato', sans-serif; 
+    text-align: center;
+    /* line-height: 1.5; */
+    background-color: #fafafa;
+}
+/* header */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 8%;
+    align-items: center;
+
+    
+}
+#home-page a{
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+    font-size: 25px;
+}
+.btn button{
+    font-size: medium;
+    padding: 10px 15px;
+    
+}
+
+button{
+    background-color:royalblue;
+    color: white;
+    border:none;
+    border-radius: 5px;
+    width:100%;
+}
+button:hover{
+    background-color: rgb(36, 77, 199);
+}
+
+/* main */
+/* sign-up block */
+
+p{
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 1.3rem;
+    color:rgb(90, 90, 90);
+
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.4rem;
+}
+.sign-up{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2fHcGul_FNUDd-TLRekrlOIQSK43mAnMOLA&usqp=CAU);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.9;
+    color:white;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    font-size: 1rem;
+}
+.signup-area button, .signup-area input{
+    padding:15px 0;
+    width: 430px;
+    border:none;
+    margin: 8px 0;
+    font-size: medium;
+    border-radius: 5px;
+}
+.signup-area input{
+    padding-left: 10px ;
+}
+
+/* services */
+.rows i{
+    color:rgb(36, 77, 199)
+}
+.services{
+    padding: 10%;
+}
+.rows{
+    padding: 30px 20px;
+}
+.rows:hover i{
+    transform: scale(1.3);
+}
+/* service pic blocks */
+.service-block{
+    /* width:100vw; */
+    background:white;
+
+    
+}
+.service-pic img{
+    width: 100%;
+    height:530px;
+    object-fit: cover;
+}
+.service-text{
+    padding: 20px 40px;
+    margin:auto;
+    text-align: left;
+    background:white;
+}
+
+
+/* testimonials */
+.testimonials{
+    padding: 30px 40px;
+}
+.feedbacks img{
+    padding-top: 3px;
+    width: 200px;
+    height:200px;
+    border-radius: 50%;
+    box-shadow: 0 5px 5px 0 gray;
+}
+.feedbacks{
+    padding: 10px 30px;
+    margin: 10px 0px
+}
+.feedback-text{
+    width:40%;
+    margin:auto; 
+}
+.feedback-text p{
+    font-size: 15px;
+}
+
+.bottom{
+    min-height: 450px;
+}
+
+
+/* footer */
+footer{
+    margin: 30px 0;
+    padding-top: 10px;
+}
+
+ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 5px;
+    color:rgb(36, 77, 199);
+ 
+}
+.info a{
+    color: royalblue;
+    text-decoration: none;
+}
+.info a:hover{
+    text-decoration: underline;
+}
+ ul{
+    padding: 20px 0 0 0;
+}
+#copywrite p{
+    color:rgb(148, 148, 148);
+    font-size: 15px;
+  
+}
+/* social meadia connections */
+.connections li{
+    padding: 5px 15px;
+}
+
+
+/* Tablet size */
+@media(min-width:768px){
+    .signup-area button{
+        max-width: 20%;
+        margin-left:10px;
+    }
+    .sign-up input{
+        max-width:65%;
+    }
+    .sign-up{
+        min-height: 630px;
+    }
+    .service-text{
+        padding: 10% 20%;
+    }
+    .feedback-text{
+        width:40%;
+        margin:auto; 
+    }
+    .feedback-text p{
+        font-size: 15px;
+    }
+    .bottom{
+        min-height: 300px;
+    }
+}
+
+ @media(min-width: 900px){
+    header{
+         padding: 2% 10%; 
+    }
+    
+    .sign-up h1{
+        font-size: 3rem;
+    }
+    .text-block{
+        width: 65%;
+        margin:auto;
+    }
+
+    .services{
+        display: flex;
+        justify-content: space-around;
+        padding: 6%;
+    }
+    .rows{
+        width:33%;
+        padding:5px;
+    }
+
+    .service-block{
+        display: flex;
+        justify-content: stretch;
+        flex-direction: row-reverse;
+    }
+    .middle{
+        flex-direction: row;
+    }
+    .service-pic, .service-text{
+        display: inline-block;
+        width:50%;
+        background:white;
+        margin:0;
+    }
+    .service-text{
+        padding:0;
+    }
+    .text-inside{
+        padding: 15%;
+        
+    }
+    .users-fb{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .testimonials{
+        padding: 4rem;
+    }
+    .feedback-text {
+        margin:0;
+        width:300px
+    }
+    .bottom{
+        min-height: 350px;
+    }
+    footer{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10%;
+    }
+} 
